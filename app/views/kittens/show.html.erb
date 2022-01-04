@@ -1,0 +1,17 @@
+<h1><%= @kitten.name %></h1>
+
+<div><%= link_to 'Back to Index', root_path %></div>
+<ul>
+  <li><%= link_to 'Edit', edit_kitten_path %></li>
+  <li><%= link_to 'Delete', kitten_path(@kitten), 
+    method: :delete, 
+    data: { confirm: 'Are you sure?' } %></li>
+</ul>
+
+<div style='background-color: gray'>
+  <ul>
+    <li>Age: <%= @kitten.age %></li>
+    <li>Softness: <%= @kitten.softness %></li>
+    <li>Cuteness: <%= @kitten.cuteness %></li>
+  </ul>
+</div>
