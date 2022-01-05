@@ -1,5 +1,7 @@
 <h1><%= @kitten.name %></h1>
 
+<%= render 'flash' %>
+
 <div><%= link_to 'Back to Index', root_path %></div>
 <ul>
   <li><%= link_to 'Edit', edit_kitten_path %></li>

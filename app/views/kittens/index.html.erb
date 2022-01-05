@@ -2,6 +2,8 @@
 
 <div><%= link_to 'New Kitten!', new_kitten_path %></div>
 
+<%= render 'flash' %>
+
 <ul>
   <% @kittens.each do |kitten| %>
     <li>
